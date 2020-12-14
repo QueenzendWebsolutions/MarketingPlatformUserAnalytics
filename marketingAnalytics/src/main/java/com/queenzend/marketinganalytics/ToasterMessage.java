@@ -1,4 +1,4 @@
-package com.queenzend.toasterlibrary;
+package com.queenzend.marketinganalytics;
 
 import android.content.Context;
 import android.widget.Toast;
