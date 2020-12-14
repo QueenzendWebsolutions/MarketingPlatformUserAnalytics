@@ -20,7 +20,7 @@ public class eventTrackData {
         public static void eventData(String user_id, String company_id, String event_name) {
 
 
-            class UserLoginEvent extends AsyncTask<String, Void, String> {
+            class eventTrackData extends AsyncTask<String, Void, String> {
                 String EventUrl = URLUtils.Url_event_api;
                 String server_response;
 
