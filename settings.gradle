@@ -1,0 +1,3 @@
+include ':marketingAnalytics'
+include ':app'
+rootProject.name = "marketingPlatformAnalytics"
