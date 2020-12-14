@@ -17,7 +17,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 public class eventTrackData {
         //For save login Event:
-        public void eventData(final String user_id, final String company_id, final String event_name) {
+        public static void eventData(final String user_id, final String company_id, final String event_name) {
 
 
             class UserLoginEvent extends AsyncTask<String, Void, String> {
