@@ -17,7 +17,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 public class eventTrackData {
         //For save login Event:
-        public static void eventData(final String user_id, final String company_id, final String event_name) {
+        public static void eventData(final String user_id, final String company_id, final String event_name, final JSONObject event_data) {
 
 
             class UserLoginEvent extends AsyncTask<String, Void, String> {
@@ -45,6 +45,7 @@ public class eventTrackData {
                             object.put("user_id", user_id);
                             object.put("company_id", company_id);
                             object.put("event_name", event_name);
+                            object.put("event_data", event_data);
                             wr.write(object.toString());
                             Log.e("JSON INPUT", object.toString());
                             wr.flush();
