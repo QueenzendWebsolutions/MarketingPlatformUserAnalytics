@@ -17,10 +17,14 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 public class eventTrackData {
         //For save login Event:
+//<<<<<<< HEAD
         public static void eventData(final String user_id, final String company_id, final String event_name, final JSONObject event_data) {
+//=======
+//        public static void eventData(String user_id, String company_id, String event_name) {
+//>>>>>>>
 
 
-            class UserLoginEvent extends AsyncTask<String, Void, String> {
+            class saveeventTrackData extends AsyncTask<String, Void, String> {
                 String EventUrl = URLUtils.Url_event_api;
                 String server_response;
 
@@ -113,7 +117,7 @@ public class eventTrackData {
                     return response.toString();
                 }
             }
-            UserLoginEvent ul = new UserLoginEvent();
+            saveeventTrackData ul = new saveeventTrackData();
             ul.execute();
         }
     }

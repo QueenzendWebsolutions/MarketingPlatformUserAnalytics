@@ -15,5 +15,4 @@ public class ToasterMessage {
     public static void d(Context c,String password){
         Toast.makeText(c,password, Toast.LENGTH_SHORT).show();
     }
-
 }

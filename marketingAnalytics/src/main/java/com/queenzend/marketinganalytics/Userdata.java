@@ -142,7 +142,7 @@ public class Userdata {
                                             final String jobtype,final String gender,final String city,
                                             final String country,final String dob,final String address,
                                             final String LATITUDE_VALUE,final String LONGITUDE_VALUE ,final String password,
-                                            final String source,final String company_token) {
+                                            final String source,final String company_token,final String relation,final String bloodgroup,final String age) {
         class UserLogin extends AsyncTask<String, Void, String> {
             String loginUrl = URLUtils.Url_appUserRegistration;
             String server_response;
@@ -178,6 +178,9 @@ public class Userdata {
                         object.put("dob", dob);
                         object.put("address", address);
                         object.put("gender", gender);
+                        object.put("married_status", relation);
+                        object.put("blood_group", bloodgroup);
+                        object.put("age", age);
                         object.put("password", password);
                         object.put("company_token", company_token);
                         wr.write(object.toString());
